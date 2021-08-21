@@ -1,6 +1,6 @@
-# nextjs-urql-csr-pokedex
+# nextjs-urql-ssr-pokedex
 
-Next.js + urql を使用したポケモン図鑑アプリの CSR 実装
+Next.js + urql を使用したポケモン図鑑アプリの SSR 実装
 
 ## Starts in development mode
 
