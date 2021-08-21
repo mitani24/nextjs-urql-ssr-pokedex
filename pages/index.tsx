@@ -11,7 +11,7 @@ import {
 function Home() {
   return (
     <div>
-      <h1>Pokemon list</h1>
+      <h1>Pokedex</h1>
       <PokemonList />
     </div>
   );
