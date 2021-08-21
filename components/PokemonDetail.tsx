@@ -3,6 +3,7 @@ import { useQuery } from "urql";
 import {
   PokemonDetailDocument,
   PokemonDetailResponse,
+  PokemonDetailVariables,
 } from "../graphql/pokemon-documents";
 import PokemonListItem from "../components/PokemonListItem";
 import styles from "../styles/PokemonDetail.module.css";
@@ -12,7 +13,7 @@ type Props = {
 };
 
 export default function PokemonDetail({ pokemonId }: Props) {
-  const [result] = useQuery<PokemonDetailResponse>({
+  const [result] = useQuery<PokemonDetailResponse, PokemonDetailVariables>({
     query: PokemonDetailDocument,
     variables: { pokemonId },
   });

@@ -57,6 +57,14 @@ export type PokemonsResponse = {
   pokemons: PokemonSimple[];
 };
 
+export type PokemonsVariables = {
+  pokemonsFirst: number;
+};
+
 export type PokemonDetailResponse = {
   pokemon: PokemonDetail | null;
+};
+
+export type PokemonDetailVariables = {
+  pokemonId: string;
 };

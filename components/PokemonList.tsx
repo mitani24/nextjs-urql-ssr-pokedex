@@ -2,12 +2,13 @@ import { useQuery } from "urql";
 import {
   PokemonsDocument,
   PokemonsResponse,
+  PokemonsVariables,
 } from "../graphql/pokemon-documents";
 import PokemonListItem from "./PokemonListItem";
 import styles from "../styles/PokemonList.module.css";
 
 export default function PokemonList() {
-  const [result] = useQuery<PokemonsResponse>({
+  const [result] = useQuery<PokemonsResponse, PokemonsVariables>({
     query: PokemonsDocument,
     variables: {
       pokemonsFirst: 151,
